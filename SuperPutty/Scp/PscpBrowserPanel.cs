@@ -28,7 +28,7 @@ namespace SuperPutty.Scp
              //set the remote path
             String remotePath = "";            
             if (String.IsNullOrEmpty(session.RemotePath)){                
-                remotePath = options.PscpHomePrefix + session.Username;
+                remotePath = ""; // options.PscpHomePrefix + session.Username;
             }else{                
                 remotePath = session.RemotePath;
             }

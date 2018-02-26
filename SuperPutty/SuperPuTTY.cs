@@ -525,7 +525,7 @@ namespace SuperPutty
             }
             else if (session != null)
             {
-                var homePrefix = session.Username.ToLower().Equals("root") ? Settings.PscpRootHomePrefix : Settings.PscpHomePrefix;
+                var homePrefix = ""; // session.Username.ToLower().Equals("root") ? Settings.PscpRootHomePrefix : Settings.PscpHomePrefix;
                 PscpBrowserPanel panel = new PscpBrowserPanel(
                     session, new PscpOptions { PscpLocation = Settings.PscpExe, PscpHomePrefix = homePrefix });
                 ApplyDockRestrictions(panel);
